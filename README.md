@@ -68,7 +68,7 @@ assets/ # Diagrams and visual documentation
 
 
 
-A static preview of this lab is hosted at: `https://devsecops.netlify.app` \*(update this after Netlify)\*
+A static preview of this lab is hosted at: https://devsecops-lab.netlify.app/
 
 
 
