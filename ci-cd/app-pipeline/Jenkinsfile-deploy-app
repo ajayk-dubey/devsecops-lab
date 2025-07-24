@@ -1,0 +1,8 @@
+pipeline {
+    agent any
+    stages {
+        stage('Deploy to Dev') {
+            steps { echo 'Deploying app to EKS Dev namespace...' }
+        }
+    }
+}

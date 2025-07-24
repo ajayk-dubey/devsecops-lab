@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('Terraform Init') {
+            steps { echo 'Initializing Terraform...' }
+        }
+        stage('Terraform Plan') {
+            steps { echo 'Planning infra changes...' }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+pipeline {
+    agent any
+    stages {
+        stage('Terraform Apply') {
+            steps { echo 'Applying Terraform changes...' }
+        }
+    }
+}

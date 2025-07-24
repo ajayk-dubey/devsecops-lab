@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('Secret Scan') {
+            steps { echo 'Running Gitleaks...' }
+        }
+        stage('SAST') {
+            steps { echo 'Running Semgrep...' }
+        }
+    }
+}
