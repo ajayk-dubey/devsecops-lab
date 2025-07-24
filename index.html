@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevSecOps Lab</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #e0e7ff;
+      margin: 0;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      color: #3b82f6;
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+      text-align: center;
+    }
+    h2 {
+      color: #60a5fa;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .center {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .button {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #2563eb;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>AJAYD's DevSecOps Lab 🚀</h1>
+
+  <p class="center">
+    A production-grade DevSecOps Lab demonstrating secure CI/CD pipelines for both application and infrastructure deployment. It integrates modern tools across security, automation, and monitoring.
+  </p>
+
+  <h2>🔐 Security Tools Integrated</h2>
+  <ul>
+    <li><strong>Code Scanning:</strong> Semgrep, SonarQube, Gitleaks</li>
+    <li><strong>Dependency Scanning:</strong> Trivy, OWASP Dependency-Check</li>
+    <li><strong>Container Scanning:</strong> Dockle, Trivy, Syft</li>
+    <li><strong>IaC Scanning:</strong> Checkov, TFLint, KubeLinter, Conftest, kube-bench</li>
+    <li><strong>Vulnerability Management:</strong> DefectDojo</li>
+  </ul>
+
+  <h2>📦 Project Structure</h2>
+  <pre style="background:#1e293b; padding: 1rem; border-radius:6px; color:#cbd5e1;">
+ci-cd/
+├── app-pipeline/
+│   ├── Jenkinsfile-build-app
+│   ├── Jenkinsfile-scan-app
+│   └── Jenkinsfile-deploy-app
+├── infra-pipeline/
+│   ├── Jenkinsfile-build-infra
+│   ├── Jenkinsfile-scan-infra
+│   └── Jenkinsfile-deploy-infra
+envs/
+├── dev/       # Region & environment-specific tfvars
+├── test/
+├── stage/
+└── prod/
+modules/
+├── global/    # Global networking / IAM modules
+└── regional/  # Regional VPC, Subnet, NAT, etc.
+assets/        # Diagrams and visual documentation
+  </pre>
+
+  <div class="center">
+    <a class="button" href="https://github.com/ajayk-dubey/devsecops-lab" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Ajayd — DevOps Engineer
+  </footer>
+</body>
+</html>
